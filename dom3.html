@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 3</title>
+</head>
+<body>
+    <!-- Normal HTML -->
+     <h1>Hello Bacho</h1>
+     <p id="js"></p>
+     <button onclick="hey()"></button>
+     <!-- Java Script -->
+      <script>
+        function hello(){
+            let h=document.getElementById("js");
+            h.innerText="Namaste Bachho";
+        }
+       // document.addEventListener("click", hello);
+        let para =document.querySelector("h1");
+        para.addEventListener("mouseover",hello);
+        function hey()
+        {
+            document.getElementById("js").innerText="thanks for click on me";
+
+        }
+        
+
+        
+      </script>
+</body>
+</html>

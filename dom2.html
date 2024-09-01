@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 2</title>
+</head>
+<body>
+    <ul>
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THREE</li>
+    </ul>
+
+    <script>
+        //Append Child
+        let title=document.createElement("h2");
+        title.className="PW";
+        title.style.color="red";
+        title.style.fontSize="25px";
+        title.textContent="Create element using javascript";
+       // console.log(title.textContent);
+        document.body.appendChild(title);
+
+        //Remove Child
+        let ul=document.querySelector("ul");
+        console.log(ul);
+        ul.style.color="blue";
+        let lists= document.querySelectorAll("li");
+        console.log(lists);
+        for(list of lists){
+            ul.removeChild(list)
+        }
+        
+        
+
+        
+    </script>
+</body>
+</html>
